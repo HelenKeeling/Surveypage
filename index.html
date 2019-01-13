@@ -1,0 +1,103 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+
+    <title>Survey for FreeCodeCamp</title>
+
+    <body>
+
+      <div class="contact">
+        <h1 id="title">
+          <strong>Survey for FreeCodeCamp</strong>
+        </h1>
+<p id="description">Please take a moment to fill out our survey</p>
+        <div class="container">
+
+          <form id="survey-form">
+         <form action="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+            <label id="name-label">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="firstname"
+              placeholder="Your name"
+              required
+            />
+
+            <label id="number-label">Age</label>
+            <input
+              type="number"
+              id="number"
+              name="number"
+              min="18" max="100"
+              placeholder="Age"
+              required
+            />
+<br>
+            <label id="email-label">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email@Example.com"
+              required
+            /><br><br>
+
+
+            <label for="gender-label">Gender:</label><br>
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other
+            <br>
+
+            <br><label for="checkbox-label">What pet do you have?</label><br>
+            <input type="checkbox" name="cat" value="cat"> I have a cat<br>
+            <input type="checkbox" name="dog" value="dog"> I have a dog <br>
+            <input type="checkbox" name="bird" value="bird"> I have a bird <br>
+            <input type="checkbox" name="none" value="none"> None<br>
+            <input type="checkbox" name="other" value="other"> Other<br><br>
+
+           
+            <label for="feedback-label">How did you hear about us</label>
+            <select id="dropdown">
+                    <option value="Select">Select one</option>
+                    <option value="Google">Google</option>
+                    <option value="From a friend">From a friend</option>
+                    <option value="TV">TV</option>
+                    <option value="Radio">Radio</option>
+                  </select>
+<BR><BR>
+            
+            <label for="subject">Anything else?</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write me a message here.."
+              style="height:200px"
+              required
+            ></textarea>
+
+
+            <input type="submit" id="submit" value="Submit" />
+            <input type="reset">
+          </form>
+        </div>
+      </div>
+
+      </body>
+      </head>
+      </html>
